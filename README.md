@@ -17,7 +17,7 @@
 ## 📩 Contact Us
 If you have suggestions, story tips, or information to share, feel free to reach out:
 
-- **Email:** contact@bulhaarnews.com  
+- **Email:** bulhaarnews@.com  
 - **Website:** https://www.bulhaarnews.com  
 - **Social Media:** Follow us on Twitter (X) & Facebook  
 
