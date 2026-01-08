@@ -1,122 +1,126 @@
 <!DOCTYPE html>
-<html lang="so">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BULHAAR NEWS | Global & Horn of Africa</title>
+    <title>BULHAAR NEWS | Global Insights & Horn of Africa Updates</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .serif { font-family: 'Playfair Display', serif; }
-        .breaking-news-scroll { animation: scroll 20s linear infinite; }
+        .breaking-news-scroll { animation: scroll 30s linear infinite; }
         @keyframes scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        .hover-lift { transition: transform 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-900">
 
-    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex-1 hidden md:block text-xs font-bold text-gray-500 uppercase tracking-widest">
-                Hargeisa, Somalia | Jan 2026
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex-1 hidden lg:block text-[10px] font-black text-gray-400 uppercase tracking-[0.2em]">
+                Somalia • Ethiopia • Djibouti • Kenya
             </div>
             <div class="flex-1 text-center">
                 <h1 class="serif text-5xl font-black text-red-700 tracking-tighter italic">BULHAAR NEWS</h1>
+                <p class="text-[9px] font-bold text-gray-500 uppercase tracking-widest mt-1">International Edition</p>
             </div>
-            <div class="flex-1 flex justify-end items-center space-x-4">
-                <a href="mailto:bulhaar@gmail.com" class="bg-black text-white px-4 py-2 text-[10px] font-bold rounded hover:bg-red-700 transition">SUBSCRIBE</a>
+            <div class="flex-1 flex justify-end items-center">
+                <a href="mailto:bulhaar@gmail.com" class="border-2 border-black text-black px-6 py-2 text-[10px] font-black rounded-full hover:bg-black hover:text-white transition duration-300">SUBSCRIBE</a>
             </div>
         </div>
         
-        <nav class="bg-black text-white py-2 overflow-x-auto">
-            <div class="container mx-auto px-4 flex justify-center space-x-8 text-[11px] font-bold uppercase tracking-widest whitespace-nowrap">
-                <a href="#" class="hover:text-red-500">Caalamka</a>
-                <a href="#" class="hover:text-red-500">Geeska Afrika</a>
-                <a href="#" class="hover:text-red-500 text-red-500">Wararka Maanta</a>
-                <a href="#" class="hover:text-red-500">Falanqayn</a>
-                <a href="#" class="hover:text-red-500">Tiknoolajiyadda</a>
+        <nav class="bg-white py-3 border-t border-gray-50">
+            <div class="container mx-auto px-4 flex justify-center space-x-10 text-[11px] font-bold uppercase tracking-[0.15em] text-gray-600">
+                <a href="#" class="hover:text-red-700 transition">Global</a>
+                <a href="#" class="hover:text-red-700 transition">Horn of Africa</a>
+                <a href="#" class="text-red-700 border-b-2 border-red-700 pb-1">Historical Archive</a>
+                <a href="#" class="hover:text-red-700 transition">Business</a>
+                <a href="#" class="hover:text-red-700 transition">Special Reports</a>
             </div>
         </nav>
     </header>
 
-    <div class="bg-red-700 text-white py-2 flex items-center overflow-hidden">
-        <div class="px-4 bg-red-800 font-bold text-xs uppercase z-10">DEGE-DEG</div>
-        <div class="breaking-news-scroll whitespace-nowrap text-sm font-medium">
-            &bull; Bulhaar News oo bilowday warbaahin casri ah &bull; Ganacsiga Geeska Afrika oo koboc ka muuqdo &bull; Wararkii ugu dambeeyay ee Caalamka &bull; Isbedelada cimilada iyo saamaynta gobolka.
+    <div class="bg-red-700 text-white py-2.5 flex items-center overflow-hidden">
+        <div class="px-6 bg-red-800 font-black text-[10px] uppercase z-10 italic tracking-widest">Flash</div>
+        <div class="breaking-news-scroll whitespace-nowrap text-xs font-semibold uppercase tracking-wider">
+            &bull; Bulhaar News expands digital footprint with 24/7 English coverage &bull; Historical research highlights Bulhar district's role in 19th-century global trade &bull; Regional leaders meet to discuss economic integration in the Horn &bull; Tech startups in Mogadishu and Hargeisa see record investment.
         </div>
     </div>
 
-    <main class="container mx-auto px-4 py-8">
-        <div class="grid grid-cols-12 gap-8">
+    <main class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-12 gap-12">
             
-            <div class="col-span-12 lg:col-span-8 space-y-12">
-                <article class="group cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200" class="w-full h-[450px] object-cover rounded shadow-lg group-hover:opacity-90 transition">
-                    <div class="mt-6">
-                        <span class="text-red-700 font-bold text-xs uppercase tracking-widest">Geeska Afrika</span>
-                        <h2 class="serif text-4xl font-bold mt-2 group-hover:underline">Mustaqbalka Geeska: Maxaa laga filan karaa isbedelada cusub?</h2>
-                        <p class="mt-4 text-gray-600 leading-relaxed">Waxaan si qoto dheer ugu eegaynaa xaaladaha maanta ka jira gobolka, annaga oo soo xiganayna khubaro dhinaca amniga iyo dhaqaalaha ah. Bulhaar News waxay had iyo jeer u taagan tahay runta...</p>
-                        <div class="mt-4 flex items-center text-xs text-gray-400 font-bold uppercase space-x-4">
-                            <span>By Admin Bulhaar</span>
-                            <span>&bull;</span>
-                            <span>8 Jan 2026</span>
+            <div class="col-span-12 lg:col-span-8">
+                <article class="hover-lift">
+                    <div class="relative overflow-hidden rounded-sm shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1473186578172-c141e6798ee4?auto=format&fit=crop&w=1200" class="w-full h-[550px] object-cover" alt="Historic Port">
+                        <div class="absolute bottom-6 left-6">
+                            <span class="bg-red-700 text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest">Heritage & Culture</span>
+                        </div>
+                    </div>
+                    <div class="mt-10 max-w-3xl">
+                        <h2 class="serif text-5xl font-black leading-tight text-gray-900 mb-6">Bulhar District: The Historic Gateway of the Sahil Coast</h2>
+                        <p class="text-gray-600 text-xl leading-relaxed mb-6 font-light">
+                            Strategically positioned on the Gulf of Aden, Bulhar remains a testament to the Horn of Africa's rich mercantile history. In the late 1800s, this historic district was a bustling international port, rivaling the largest trade centers in the region.
+                        </p>
+                        <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                            Today, Bulhaar News carries forward that legacy of connection. By bridging the gap between local events and global audiences, we aim to revitalize the prominence of the Sahil region's history while reporting on its future potential.
+                        </p>
+                        <div class="flex items-center space-x-4 border-t border-gray-100 pt-6">
+                            <div class="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center text-white font-bold text-xs">BN</div>
+                            <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                                <span>Editorial Board</span>
+                                <span class="mx-2">|</span>
+                                <span>Jan 8, 2026</span>
+                            </div>
                         </div>
                     </div>
                 </article>
-
-                <hr class="border-gray-200">
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-medium">
-                    <div class="group cursor-pointer">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=400" class="w-full h-48 object-cover rounded shadow">
-                        <h3 class="mt-4 serif text-xl group-hover:text-red-700">Tiknoolajiyadda: Sidee AI u bedeshay shaqada dadka?</h3>
-                    </div>
-                    <div class="group cursor-pointer">
-                        <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=400" class="w-full h-48 object-cover rounded shadow">
-                        <h3 class="mt-4 serif text-xl group-hover:text-red-700">Dhaqaalaha: Suuqa saamiyada oo isbedel weyn laga dareemay.</h3>
-                    </div>
-                </div>
             </div>
 
-            <div class="col-span-12 lg:col-span-4 space-y-10">
-                <div class="bg-gray-100 p-8 rounded border-t-4 border-red-700">
-                    <h3 class="serif text-xl font-bold">About Bulhaar News</h3>
-                    <p class="text-sm text-gray-600 mt-4 leading-loose">Bulhaar News waa mid ka mid ah ilaha ugu kalsoonida badan ee wararka Geeska Afrika iyo caalamka. Waxaan dhisnaa warbaahin dhex-dhexaad ah oo xog dhab ah bixisa.</p>
+            <div class="col-span-12 lg:col-span-4 space-y-12">
+                <div class="bg-black text-white p-10 rounded-sm">
+                    <h3 class="serif text-2xl font-bold mb-6">About Bulhaar News</h3>
+                    <p class="text-gray-400 text-sm leading-loose font-light">
+                        We are a premier independent news organization dedicated to high-impact journalism in the Horn of Africa. Our mission is to provide accurate, unbiased, and world-class reporting for a global audience.
+                    </p>
                 </div>
 
-                <div class="space-y-6">
-                    <h3 class="text-xs font-black uppercase tracking-widest border-b pb-2">Trending News</h3>
-                    <div class="flex items-start space-x-4">
-                        <span class="text-3xl font-black text-gray-200">01</span>
-                        <p class="text-sm font-bold hover:text-red-700 cursor-pointer transition">Masiirka doorashooyinka gobolka oo la falanqeeyay.</p>
+                <div class="space-y-8">
+                    <h3 class="text-[11px] font-black uppercase tracking-[0.3em] text-red-700 border-b border-gray-100 pb-3">The Daily Briefing</h3>
+                    
+                    <div class="group cursor-pointer">
+                        <p class="text-[10px] font-bold text-gray-400 uppercase mb-2">Economy</p>
+                        <h4 class="text-lg font-bold leading-snug group-hover:text-red-700 transition">How regional trade corridors are shaping the future of African logistics.</h4>
                     </div>
-                    <div class="flex items-start space-x-4 border-t pt-4">
-                        <span class="text-3xl font-black text-gray-200">02</span>
-                        <p class="text-sm font-bold hover:text-red-700 cursor-pointer transition">Tartanka ganacsiga ee shirkadaha waaweyn.</p>
+
+                    <div class="group cursor-pointer pt-6 border-t border-gray-50">
+                        <p class="text-[10px] font-bold text-gray-400 uppercase mb-2">Technology</p>
+                        <h4 class="text-lg font-bold leading-snug group-hover:text-red-700 transition">Fiber optic expansion across the coast to boost digital connectivity.</h4>
                     </div>
                 </div>
 
-                <div class="bg-black text-white p-8 rounded shadow-2xl">
-                    <h3 class="serif text-xl font-bold mb-4">Contact Our Newsroom</h3>
-                    <p class="text-sm text-gray-400 mb-6 font-light">Contact us for tips, news submissions, or partnerships.</p>
-                    <div class="space-y-2 text-sm">
-                        <p><span class="text-red-500 font-bold">Email:</span> bulhaar@gmail.com</p>
-                        <p><span class="text-red-500 font-bold">Location:</span> Hargeisa, Somalia</p>
-                    </div>
+                <div class="bg-gray-100 p-8 border border-gray-200">
+                    <h3 class="serif text-xl font-bold mb-4">International Edition</h3>
+                    <p class="text-xs text-gray-500 mb-6">Sign up to receive the Bulhaar Morning Brief directly in your inbox.</p>
+                    <input type="email" placeholder="Your Email" class="w-full border border-gray-300 px-4 py-3 text-xs mb-3 focus:outline-none focus:ring-1 focus:ring-red-700">
+                    <button class="w-full bg-red-700 text-white text-[10px] font-black py-4 uppercase tracking-[0.2em] hover:bg-black transition duration-300">Subscribe Now</button>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="bg-white border-t border-gray-200 py-20 mt-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="serif text-4xl font-black text-red-700 mb-8 tracking-tighter italic">BULHAAR NEWS</h2>
-            <div class="flex justify-center space-x-6 text-xs font-bold text-gray-400 uppercase tracking-widest">
-                <a href="#" class="hover:text-black">Privacy Policy</a>
-                <a href="#" class="hover:text-black">Terms of Service</a>
-                <a href="#" class="hover:text-black">Cookie Policy</a>
+    <footer class="bg-white border-t border-gray-200 py-20 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="serif text-6xl font-black text-red-700 mb-6 italic tracking-tighter">BULHAAR NEWS</h2>
+            <div class="flex justify-center space-x-10 text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-12">
+                <a href="#" class="hover:text-black transition">Newsroom</a>
+                <a href="#" class="hover:text-black transition">Ethics Policy</a>
+                <a href="mailto:bulhaar@gmail.com" class="hover:text-black transition">Contact</a>
             </div>
-            <p class="mt-8 text-[10px] text-gray-400 font-medium tracking-widest">© 2026 BULHAAR NEWS NETWORK. REPORTING WITH INTEGRITY.</p>
+            <p class="text-[9px] text-gray-300 font-bold tracking-[0.4em]">&copy; 2026 BULHAAR NEWS NETWORK. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
 
